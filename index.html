@@ -12,17 +12,22 @@
             <h1>Romaji Converter</h1>
 
             <nav>
-                <button class="active">Hiragana</button>
-                <button>Katakana</button>
+                <button id="hiragana" class="active" onclick="hiraganaChange()">Hiragana</button>
+                <button id="katakana"                onclick="katakanaChange()">Katakana</button>
             </nav>
         </header>
         
         <main>
-            <article class="box">
+            <article class="box" id="boxHiragana">
                 <p>Input text</p>
-                <textarea name="converter" id="converter" cols="30" rows="8"></textarea>
+                <textarea name="converter" id="converterToHi" cols="30" rows="8"></textarea>
             </article>
-            
+
+            <article class="box hidden" id="boxKatakana">
+                <p>Input text</p>
+                <textarea name="converter" id="converterToKa" cols="30" rows="8"></textarea>
+            </article>
+
             <article class="box">
                 <p>Result</p>
                 <textarea name="result" id="result" cols="30" rows="8"></textarea>
@@ -33,6 +38,34 @@
             <a href="https://github.com/ElandVarse">Click for a very handsome man.</a>
         </footer>
     </div>
-    <script src="./main.js"></script>
+
+    <script>
+        const hiraganaChange = function (){
+            katakana.classList.remove("active")
+            hiragana.classList.add("active")
+
+            boxHiragana.classList.remove('hidden')
+            boxKatakana.classList.add('hidden')
+
+            converterToHi.value='';
+            converterToKa.value='';
+            result.value='';
+        }
+        
+        const katakanaChange = function (){
+            hiragana.classList.remove("active")
+            katakana.classList.add("active")
+
+            boxHiragana.classList.add('hidden')
+            boxKatakana.classList.remove('hidden')
+
+            converterToHi.value='';
+            converterToKa.value='';
+            result.value='';
+        }
+    </script>
+
+    <script src="./hiragana.js"></script>
+    <script src="./katakana.js"></script>
 </body>
 </html>

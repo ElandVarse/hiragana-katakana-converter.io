@@ -133,4 +133,8 @@ body {
   background-color: #f9f9f9 !important;
   color: #cc5353 !important;
 }
+
+.hidden {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
