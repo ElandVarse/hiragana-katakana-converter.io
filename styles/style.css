@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.app header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 160px;
+  background-color: #5d81bd;
+}
+
+.app header h1 {
+  text-align: center;
+  font-size: 48px;
+  color: #f9f9f9;
+}
+
+.app header nav {
+  position: absolute;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  right: 30px;
+  padding: 8px 0;
+}
+
+.app header nav button {
+  background: none;
+  border: 2px solid #f9f9f9;
+  color: #f9f9f9;
+  font-size: 18px;
+  height: 30px;
+  outline: none;
+  -webkit-transition: .1s;
+  transition: .1s;
+  cursor: pointer;
+}
+
+.app main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+.app main .box {
+  width: 100%;
+  padding: 0 16px;
+  z-index: 1;
+}
+
+.app main .box p {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.app main .box textarea {
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  outline: none;
+  font-size: 24px;
+}
+
+.app footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+  width: 100%;
+  background-color: #5d81bd;
+}
+
+.app footer a {
+  outline: none;
+  text-decoration: none;
+  color: #f9f9f9;
+  font-weight: 600;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.app footer a:hover {
+  color: #d9d9d9;
+}
+
+.active {
+  background-color: #f9f9f9 !important;
+  color: #cc5353 !important;
+}
+/*# sourceMappingURL=style.css.map */
