@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 $primaryColor: #f9f9f9;
-$contextualColor: #5d81bd;
+$contextualColor: #a81c1caa;
 
 @mixin flexColumnCenter {
     display: flex;
@@ -20,80 +21,108 @@ html{
     width: 100%;
 }
 
+*{
+    box-sizing: border-box !important;
+}
+
 body{
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
 
-    font-size: 18px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 .app{
-    @include flexColumnCenter();
-    
     height: 100%;
     width: 100%;
-    background-color: $primaryColor;
-    
-    
+
+    .background{
+        background-image: url(../tokyo-unplash.jpg);
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .blur{
+        background: rgba(255, 76, 165, 0.2);
+        backdrop-filter: blur(3px);
+        height: 100vh;
+        width:100%;
+
+        @include flexColumnCenter();
+    }
+
     header{
-        @include flexRowCenter();
         width: 100%;
         height: 160px;
         background-color: $contextualColor;
+        
+        @include flexRowCenter();
 
         h1{
             text-align: center;
             font-size: 48px;
-            color: #f9f9f9;
+            font-weight: 400;
+            color: $primaryColor;
         };
 
         nav{
+            width: 160px;
             position: absolute;
-            align-self: flex-end;
-            right: 30px;
-            padding: 8px 0;
+            right: 16px;
 
             button{
+                height: 32px !important;
+                width: 160px;
                 background: none;
-                border: 2px solid #f9f9f9;
-                color: #f9f9f9;
+                border: 2px solid $primaryColor;
+                color: $primaryColor;
                 font-size: 18px;
-                height: 30px;
                 outline: none;
                 transition: .1s;
                 cursor: pointer;
-
-
             }
         }
     }
 
-    main{
+    main{        
         flex: 1;
-        width: 90%;
-        display: flex;
-        margin-top: 80px;
+        width: 100%;
+
+        .box-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         .box{
-            width: 100%;
-            padding: 0 16px;
-            z-index: 1;
+            padding: 16px;
             
             p{
-                font-size: 24px;
+                font-size: 28px;
                 font-weight: 500;
                 text-align: center;
+                color: $primaryColor;
+                font-weight: 300;
             }
 
             textarea{
                 width: 100%;
+                background-color: #4b106dee;
                 border-radius: 8px;
-                padding: 8px;
+                color: #f9f9f9;
                 outline: none;
-                font-size: 24px;
+                resize: none;
+                padding: 8px;
+                font-size: 32px;
+                font-family: "Barlow", sans-serif;
+                font-weight: 300;
             }
         }
     }
@@ -101,19 +130,19 @@ body{
     footer{
         @include flexRowCenter();
         
-        height: 60px;
+        height: 50px;
         width: 100%;
         background-color: $contextualColor;
         
         a{
             outline: none;
             text-decoration: none;
+            font-size: 18px;
             color: #f9f9f9;
-            font-weight: 600;
             transition: .2s;
 
             &:hover{
-                color: #d9d9d9;
+                color: #fcff34aa;
             }
         }
     }
@@ -121,9 +150,10 @@ body{
 
 .active{
     background-color: #f9f9f9 !important;
-    color: #cc5353 !important;
+    color: #53c2cc !important;
+    cursor: unset !important;
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }

@@ -8,35 +8,41 @@
 </head>
 <body>
     <div class="app">
-        <header>
-            <h1>Romaji Converter</h1>
+        <div class="background">
+            <div class="blur">
+                <header>
+                    <h1>Romaji Converter</h1>
 
-            <nav>
-                <button id="hiragana" class="active" onclick="hiraganaChange()">Hiragana</button>
-                <button id="katakana"                onclick="katakanaChange()">Katakana</button>
-            </nav>
-        </header>
-        
-        <main>
-            <article class="box" id="boxHiragana">
-                <p>Input text</p>
-                <textarea name="converter" id="converterToHi" cols="30" rows="8"></textarea>
-            </article>
+                    <nav>
+                        <button id="hiragana" class="active" onclick="hiraganaChange()">Hiragana</button>
+                        <button id="katakana"                onclick="katakanaChange()">Katakana</button>
+                    </nav>
+                </header>
+                
+                <main>
+                    <div class="box-container">
+                        <article class="box" id="boxHiragana" spellcheck="false">
+                            <p>Input text</p>
+                            <textarea name="converter" id="converterToHi" cols="30" rows="8"></textarea>
+                        </article>
 
-            <article class="box hidden" id="boxKatakana">
-                <p>Input text</p>
-                <textarea name="converter" id="converterToKa" cols="30" rows="8"></textarea>
-            </article>
+                        <article class="box hidden" id="boxKatakana" spellcheck="false">
+                            <p>Input text</p>
+                            <textarea name="converter" id="converterToKa" cols="30" rows="8"></textarea>
+                        </article>
 
-            <article class="box">
-                <p>Result</p>
-                <textarea name="result" id="result" cols="30" rows="8"></textarea>
-            </article>
-        </main>
-        
-        <footer>
-            <a href="https://github.com/ElandVarse">Click for a very handsome man.</a>
-        </footer>
+                        <article class="box">
+                            <p>Result</p>
+                            <textarea name="result" id="result" cols="30" rows="8"></textarea>
+                        </article>
+                    </div>
+                </main>
+                
+                <footer>
+                    <a href="https://github.com/ElandVarse" target="_blank">Click for a very handsome man ❤</a>
+                </footer>
+            </div>
+        </div>
     </div>
 
     <script>
