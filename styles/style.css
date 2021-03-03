@@ -25,7 +25,7 @@ body {
 
 .app .background {
   background-image: url(../tokyo-unplash.jpg);
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: auto;
   height: 100vh;
