@@ -1,8 +1,9 @@
 # Hiragana and Katakana Converter
 
-https://elandvarse.github.io/hiragana-katakana-converter.io/
+A Hiragana or Katakana conversor to Romaji and vice versa
 
-![Background](https://imgur.com/NvbUmjv.png)
+## Demo
+![Home](https://imgur.com/NvbUmjv.png)
 
 ## Installation
 
@@ -11,3 +12,5 @@ https://elandvarse.github.io/hiragana-katakana-converter.io/
 
  Open index.html;
 ```
+### You can check the result here:
+https://elandvarse.github.io/hiragana-katakana-converter.io/
