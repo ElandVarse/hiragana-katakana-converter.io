@@ -1,6 +1,6 @@
 # Hiragana and Katakana Converter
 
-A Hiragana or Katakana conversor to Romaji and vice versa
+A Hiragana and Katakana conversor to Romaji and vice versa
 
 ## Demo
 ![Home](https://imgur.com/NvbUmjv.png)
