@@ -1,8 +1,8 @@
 # Hiragana and Katakana Converter
 
-A Hiragana and Katakana conversor to Romaji and vice versa
+Built with pure HTML, CSS and Javascript.
 
-## Demo
+## Preview
 ![Home](https://imgur.com/NvbUmjv.png)
 
 ## Installation
@@ -12,5 +12,6 @@ A Hiragana and Katakana conversor to Romaji and vice versa
 
  Open index.html;
 ```
+
 ### You can check the result here:
 https://elandvarse.github.io/hiragana-katakana-converter.io/
